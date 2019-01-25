@@ -32,8 +32,6 @@
         <item name="bottomNavigationStyle">@style/AppBottomNavigation</item>
     </style>
 
-    <color name="colorBackground">#FAFAFA</color>
-
     <style name="AppTextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
         <item name="android:textAllCaps">false</item>
     </style>
