@@ -22,6 +22,9 @@
         <!-- Global shape attributes -->
         <item name="shapeAppearanceSmallComponent">@style/AppShapeAppearance.SmallComponent</item>
         <item name="shapeAppearanceMediumComponent">@style/AppShapeAppearance.MediumComponent</item>
+        <!-- Chip widget style attribute -->
+        <item name="chipStyle">@style/AppChip</item>
+        <item name="chipStandaloneStyle">@style/AppChip.Standalone</item>
         <!-- Button widget style attribute -->
         <item name="materialButtonStyle">@style/AppButton</item>
         <!-- Text Field widget style attribute -->
@@ -30,6 +33,10 @@
         <item name="materialCardViewStyle">@style/AppCard</item>
         <!-- Bottom Navigation widget style attribute -->
         <item name="bottomNavigationStyle">@style/AppBottomNavigation</item>
+    </style>
+
+    <style name="AppTextAppearance.Chip" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:fontFamily">@font/roboto_mono</item>
     </style>
 
     <style name="AppTextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
@@ -44,6 +51,16 @@
     <style name="AppShapeAppearance.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
         <item name="cornerFamily">cut</item>
         <item name="cornerSize">8dp</item>
+    </style>
+
+    <!-- NOTE: Chips don't seem to pick up on the theme fontFamily attributes, so these styles are necessary -->
+
+    <style name="AppChip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="android:textAppearance">@style/AppTextAppearance.Chip</item>
+    </style>
+
+    <style name="AppChip.Standalone" parent="Widget.MaterialComponents.Chip.Entry">
+        <item name="android:textAppearance">@style/AppTextAppearance.Chip</item>
     </style>
 
     <style name="AppButton" parent="Widget.MaterialComponents.Button">

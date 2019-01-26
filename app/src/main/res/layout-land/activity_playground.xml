@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
-                style="@style/Widget.MaterialComponents.Chip.Entry"
+                style="?attr/chipStandaloneStyle"
                 app:layout_constraintTop_toBottomOf="@id/raisedButton"
                 app:layout_constraintStart_toEndOf="@id/chip"
                 android:text="Entry Chip" />
