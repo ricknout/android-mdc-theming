@@ -27,6 +27,8 @@
         <item name="chipStandaloneStyle">@style/AppChip.Standalone</item>
         <!-- Button widget style attribute -->
         <item name="materialButtonStyle">@style/AppButton</item>
+        <!-- FAB widget style attribute -->
+        <item name="floatingActionButtonStyle">@style/AppFab</item>
         <!-- Text Field widget style attribute -->
         <item name="textInputStyle">@style/AppTextField</item>
         <!-- Card widget style attribute -->
@@ -53,6 +55,11 @@
         <item name="cornerSize">8dp</item>
     </style>
 
+    <style name="AppShapeAppearance.Fab" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">@null</item>
+    </style>
+
     <!-- NOTE: Chips don't seem to pick up on the theme fontFamily attributes, so these styles are necessary -->
 
     <style name="AppChip" parent="Widget.MaterialComponents.Chip.Action">
@@ -65,6 +72,12 @@
 
     <style name="AppButton" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">?attr/colorSecondary</item>
+    </style>
+
+    <!-- NOTE: FABs override shapeAppearanceSmallComponent, so this style is necessary -->
+
+    <style name="AppFab" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/AppShapeAppearance.Fab</item>
     </style>
 
     <style name="AppTextField" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
