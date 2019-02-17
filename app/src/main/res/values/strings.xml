@@ -2,4 +2,7 @@
 
     <string name="app_name">MDC Theming</string>
 
+    <string name="title_theming">Theming</string>
+    <string name="title_bottom_app_bar">Bottom App Bar</string>
+
 </resources>

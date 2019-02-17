@@ -11,12 +11,21 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
 
-        <activity android:name=".PlaygroundActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity
+                android:name=".theming.ThemingActivity"
+                android:label="@string/title_theming" />
+
+        <activity
+                android:name=".bottomappbar.BottomAppBarActivity"
+                android:label="@string/title_bottom_app_bar"
+                android:theme="@style/AppTheme.BottomAppBar.Themed" />
 
         <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
 

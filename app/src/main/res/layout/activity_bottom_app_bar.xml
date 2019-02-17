@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="100dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:clipToPadding="false">
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/fabAlignmentModeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toggle FAB alignment mode" />
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/fabAnimationModeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toggle FAB animation mode" />
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/increaseFabCradleMarginButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Increase FAB cradle margin" />
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/decreaseFabCradleMarginButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Decrease FAB cradle margin" />
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/increaseFabCradleCornerRadiusButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Increase FAB cradle corner radius" />
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/decreaseFabCradleCornerRadiusButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Decrease FAB cradle corner radius" />
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/increaseFabCradleVerticalOffsetButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Increase FAB cradle vertical offset" />
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/decreaseFabCradleVerticalOffsetButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Decrease FAB cradle vertical offset" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:navigationIcon="@drawable/ic_menu_on_primary_24dp"
+            app:navigationContentDescription="Navigation icon"
+            app:hideOnScroll="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@id/bottomAppBar"
+            app:srcCompat="@drawable/ic_add_on_surface_24dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
