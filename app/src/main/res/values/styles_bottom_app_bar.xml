@@ -35,7 +35,8 @@
         <item name="materialThemeOverlay">@style/AppThemeOverlay.BottomAppBar</item>
     </style>
 
-    <!-- NOTE: This only works for the overflow menu icon :-( -->
+    <!-- BUG: This only works for the overflow menu icon :-( -->
+    <!-- See: https://issuetracker.google.com/issues/127454210 -->
     <style name="AppThemeOverlay.BottomAppBar" parent="ThemeOverlay.MaterialComponents.BottomAppBar.Primary">
         <item name="colorControlNormal">?attr/colorOnPrimary</item>
         <item name="actionMenuTextColor">?attr/colorOnPrimary</item>
