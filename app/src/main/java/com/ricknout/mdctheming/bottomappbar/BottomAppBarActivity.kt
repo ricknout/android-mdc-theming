@@ -91,8 +91,11 @@ class BottomAppBarActivity : AppCompatActivity() {
         }
     }
 
+    // BUG: Shape theming is not supported by default for the BottomAppBar cradle
     // Use this function to enable cut corners for the BottomAppBar FAB cradle
     // Note: It does NOT respond to increasing/decreasing the FAB cradle margin, rounded corner radius or vertical offset
+    // Copied from: https://github.com/material-components/material-components-android/blob/master/catalog/java/io/material/catalog/bottomappbar/BottomAppBarCutCornersTopEdge.java
+    // See: https://issuetracker.google.com/issues/127454207
     private fun setupBottomAppBarCutCornersBackground() {
         val topEdge = BottomAppBarCutCornersTopEdge(
             bottomAppBar.fabCradleMargin,
