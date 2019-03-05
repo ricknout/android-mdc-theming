@@ -60,6 +60,7 @@
     </style>
 
     <!-- NOTE: Chips don't seem to pick up on the theme fontFamily attributes, so these styles are necessary -->
+    <!-- See: https://issuetracker.google.com/issues/127453566 -->
 
     <style name="AppChip" parent="Widget.MaterialComponents.Chip.Action">
         <item name="android:textAppearance">@style/AppTextAppearance.Chip</item>
