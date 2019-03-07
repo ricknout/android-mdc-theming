@@ -15,7 +15,7 @@ class BottomAppBarActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(com.ricknout.mdctheming.R.layout.activity_bottom_app_bar)
+        setContentView(R.layout.activity_bottom_app_bar)
         setupButtons()
         setupBottomAppBarMenuAndNavigation()
         //setupBottomAppBarCutCornersBackground()

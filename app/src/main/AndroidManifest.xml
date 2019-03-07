@@ -27,6 +27,11 @@
                 android:label="@string/title_bottom_app_bar"
                 android:theme="@style/AppTheme.BottomAppBar.Themed" />
 
+        <activity
+                android:name=".bottomnavigation.BottomNavigationActivity"
+                android:label="@string/title_bottom_navigation"
+                android:theme="@style/AppTheme.BottomNavigation.Themed" />
+
         <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
 
     </application>
