@@ -7,6 +7,9 @@ https://medium.com/over-engineering/setting-up-a-material-components-theme-for-a
 ### Part 1: Hands-on with Material Components for Android: Bottom App Bar
 https://medium.com/over-engineering/hands-on-with-material-components-for-android-bottom-app-bar-28835a1feb82
 
+### Part 2: Hands-on with Material Components for Android: Bottom Navigation
+https://medium.com/over-engineering/hands-on-with-material-components-for-android-bottom-navigation-aae2aa9066be
+
 ### More coming soon...
 
 ![Playground](art/playground.png?raw=true "Playground")
