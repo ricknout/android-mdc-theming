@@ -72,6 +72,7 @@
 
     <style name="AppButton" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">?attr/colorSecondary</item>
+        <item name="android:textColor">@color/button_text_color</item>
     </style>
 
     <style name="AppTextField" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
