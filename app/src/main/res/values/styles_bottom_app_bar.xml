@@ -19,7 +19,6 @@
         <item name="android:colorBackground">@color/colorBackground</item>
         <item name="colorOnBackground">#212121</item>
         <!-- Global type attributes -->
-        <item name="textAppearanceButton">@style/AppTextAppearance.Button</item>
         <item name="fontFamily">@font/roboto_mono</item>
         <item name="android:fontFamily">@font/roboto_mono</item>
         <!-- Global shape attributes -->
