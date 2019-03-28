@@ -38,6 +38,7 @@
         <item name="behavior_skipCollapsed">false</item>
         <item name="behavior_peekHeight">200dp</item>
         <item name="behavior_fitToContents">false</item>
+        <item name="behavior_halfExpandedRatio">0.5</item>
     </style>
 
     <style name="AppModalBottomSheet" parent="ThemeOverlay.MaterialComponents.Light.BottomSheetDialog">

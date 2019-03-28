@@ -27,7 +27,7 @@
 
     <!-- Using AppBottomNavigation2 to avoid conflicts with the main playground style -->
     <style name="AppBottomNavigation2" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
-        <item name="android:background">?attr/colorPrimary</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
         <item name="itemIconTint">@color/bottom_navigation_item_color</item>
         <item name="itemTextColor">@color/bottom_navigation_item_color</item>
         <item name="itemRippleColor">@color/bottom_navigation_item_ripple_color</item>
