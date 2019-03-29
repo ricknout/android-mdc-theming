@@ -5,19 +5,19 @@
 
     <item
             android:id="@+id/item1"
-            android:icon="@drawable/ic_favorite_border_on_primary_24dp"
+            android:icon="@drawable/ic_favorite_border_color_control_normal_24dp"
             app:showAsAction="ifRoom"
             android:title="Item 1" />
 
     <item
             android:id="@+id/item2"
-            android:icon="@drawable/ic_search_on_primary_24dp"
+            android:icon="@drawable/ic_search_color_control_normal_24dp"
             app:showAsAction="ifRoom"
             android:title="Item 2" />
 
     <item
             android:id="@+id/item3"
-            android:icon="@drawable/ic_android_on_primary_24dp"
+            android:icon="@drawable/ic_android_color_control_normal_24dp"
             android:title="Item 3" />
 
 </menu>

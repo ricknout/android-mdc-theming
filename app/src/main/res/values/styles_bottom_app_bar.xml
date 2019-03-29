@@ -34,7 +34,7 @@
         <item name="materialThemeOverlay">@style/AppThemeOverlay.BottomAppBar</item>
     </style>
 
-    <!-- BUG: This only works for the overflow menu icon :-( -->
+    <!-- This requires that our VD assets be tinted with colorControlNormal -->
     <!-- See: https://issuetracker.google.com/issues/127454210 -->
     <style name="AppThemeOverlay.BottomAppBar" parent="ThemeOverlay.MaterialComponents.BottomAppBar.Primary">
         <item name="colorControlNormal">?attr/colorOnPrimary</item>

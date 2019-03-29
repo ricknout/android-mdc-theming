@@ -68,7 +68,7 @@ class BottomAppBarActivity : AppCompatActivity() {
     }
 
     private fun setupBottomAppBarMenuAndNavigation() {
-        bottomAppBar.replaceMenu(R.menu.menu_bottom_app_bar_on_primary)
+        bottomAppBar.replaceMenu(R.menu.menu_bottom_app_bar)
         bottomAppBar.setOnMenuItemClickListener { item ->
             when (item.itemId) {
                 R.id.item1 -> {

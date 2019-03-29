@@ -77,7 +77,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            app:navigationIcon="@drawable/ic_menu_on_primary_24dp"
+            app:navigationIcon="@drawable/ic_menu_color_control_normal_24dp"
             app:navigationContentDescription="Navigation icon"
             app:hideOnScroll="true" />
 
@@ -86,6 +86,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_anchor="@id/bottomAppBar"
-            app:srcCompat="@drawable/ic_add_on_surface_24dp" />
+            app:srcCompat="@drawable/ic_add_color_control_normal_24dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

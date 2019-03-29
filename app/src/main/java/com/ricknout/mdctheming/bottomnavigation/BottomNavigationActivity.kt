@@ -34,7 +34,7 @@ class BottomNavigationActivity : AppCompatActivity() {
     }
 
     private fun setupBottomNavigationMenu() {
-        bottomNavigation.inflateMenu(R.menu.menu_bottom_navigation_on_surface)
+        bottomNavigation.inflateMenu(R.menu.menu_bottom_navigation_2)
         bottomNavigation.setOnNavigationItemSelectedListener { item ->
             when(item.itemId) {
                 R.id.item1 -> {

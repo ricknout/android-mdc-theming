@@ -3,27 +3,27 @@
 
     <item
             android:id="@+id/item1"
-            android:icon="@drawable/ic_favorite_border_on_surface_24dp"
+            android:icon="@drawable/ic_favorite_border_color_control_normal_24dp"
             android:title="Favorites" />
 
     <item
             android:id="@+id/item2"
-            android:icon="@drawable/ic_music_note_on_surface_24dp"
+            android:icon="@drawable/ic_music_note_color_control_normal_24dp"
             android:title="Music" />
 
     <item
             android:id="@+id/item3"
-            android:icon="@drawable/ic_location_on_surface_24dp"
+            android:icon="@drawable/ic_location_color_control_normal_24dp"
             android:title="Places" />
 
     <!-- <item
             android:id="@+id/item4"
-            android:icon="@drawable/ic_notifications_on_surface_24dp"
+            android:icon="@drawable/ic_notifications_color_control_normal_24dp"
             android:title="Notifications" />
 
     <item
             android:id="@+id/item5"
-            android:icon="@drawable/ic_time_on_surface_24dp"
+            android:icon="@drawable/ic_time_color_control_normal_24dp"
             android:title="Clock" /> -->
 
 </menu>
