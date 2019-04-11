@@ -37,6 +37,11 @@
                 android:label="@string/title_bottom_sheet"
                 android:theme="@style/AppTheme.BottomSheet.Themed" />
 
+        <activity
+                android:name=".button.ButtonActivity"
+                android:label="@string/title_button"
+                android:theme="@style/AppTheme.Button.Themed" />
+
         <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
 
     </application>

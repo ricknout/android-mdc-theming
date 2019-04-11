@@ -5,6 +5,7 @@
     <string name="title_theming">Theming</string>
     <string name="title_bottom_app_bar">Bottom App Bar</string>
     <string name="title_bottom_navigation">Bottom Navigation</string>
-    <string name="title_bottom_sheet">Bottom Sheet</string>
+    <string name="title_bottom_sheet">Bottom Sheets</string>
+    <string name="title_button">Buttons</string>
 
 </resources>

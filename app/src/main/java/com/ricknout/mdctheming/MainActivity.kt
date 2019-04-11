@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.ricknout.mdctheming.bottomappbar.BottomAppBarActivity
 import com.ricknout.mdctheming.bottomnavigation.BottomNavigationActivity
 import com.ricknout.mdctheming.bottomsheet.BottomSheetActivity
+import com.ricknout.mdctheming.button.ButtonActivity
 import com.ricknout.mdctheming.theming.ThemingActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -25,6 +26,9 @@ class MainActivity : AppCompatActivity() {
         }
         bottomSheetPlaygroundButton.setOnClickListener {
             startActivity(Intent(this, BottomSheetActivity::class.java))
+        }
+        buttonPlaygroundButton.setOnClickListener {
+            startActivity(Intent(this, ButtonActivity::class.java))
         }
     }
 }

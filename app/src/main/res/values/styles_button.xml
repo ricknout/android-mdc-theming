@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Button" parent="Theme.MaterialComponents.Light" />
+
+    <style name="AppTheme.Button.Themed" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Global color attributes -->
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryVariant">#000000</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#2962FF</item>
+        <item name="colorSecondaryVariant">#0039CB</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorError">#F44336</item>
+        <item name="colorOnError">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#212121</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorOnBackground">#212121</item>
+        <!-- Global type attributes -->
+        <item name="textAppearanceButton">@style/AppTextAppearance.Button</item>
+        <item name="fontFamily">@font/roboto_mono</item>
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <!-- Global shape attributes -->
+        <item name="shapeAppearanceSmallComponent">@style/AppShapeAppearance.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/AppShapeAppearance.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/AppShapeAppearance.LargeComponent</item>
+        <!-- Button widget style attributes -->
+        <item name="materialButtonStyle">@style/AppButton2</item>
+        <item name="materialButtonOutlinedStyle">@style/AppOutlinedButton</item>
+    </style>
+
+    <!-- Using AppButton2 to avoid conflicts with the main playground style -->
+    <style name="AppButton2" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">?attr/colorSecondary</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="iconTint">@color/button_text_color</item>
+        <item name="rippleColor">@color/button_ripple_color</item>
+    </style>
+
+    <style name="AppOutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+</resources>

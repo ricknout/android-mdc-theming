@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:clipToPadding="false">
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/textButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:text="Retry" />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/iconTextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:text="Retry"
+                app:icon="@drawable/ic_refresh_color_control_normal_18dp" />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/outlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:text="Hide" />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/iconOutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:text="Hide"
+                app:icon="@drawable/ic_hide_color_control_normal_18dp" />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/unelevatedContainedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:text="Show (Unelevated)" />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/iconUnelevatedContainedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                android:text="Show (Unelevated)"
+                app:icon="@drawable/ic_show_color_control_normal_18dp" />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/raisedContainedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show (Raised)" />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/iconRaisedContainedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:text="Show (Raised)"
+                app:icon="@drawable/ic_show_color_control_normal_18dp" />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/toggleSingleSelectionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Toggle single selection" />
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggleGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/toggleButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:text="None" />
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/toggleButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:text="Custom" />
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/toggleButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:text="All" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
