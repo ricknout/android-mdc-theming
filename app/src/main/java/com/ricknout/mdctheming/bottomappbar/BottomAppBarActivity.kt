@@ -54,16 +54,10 @@ class BottomAppBarActivity : AppCompatActivity() {
         increaseFabCradleVerticalOffsetButton.setOnClickListener {
             val cradleVerticalOffset = (bottomAppBar.cradleVerticalOffset + oneDp).coerceIn(0f, 16 * oneDp)
             bottomAppBar.cradleVerticalOffset = cradleVerticalOffset
-            // BUG: The above does not update the position of the FAB :-( It appears to require a layout,
-            // but even the setter does not change the internal fabVerticalOffset property...
-            // See: https://issuetracker.google.com/issues/127290685
         }
         decreaseFabCradleVerticalOffsetButton.setOnClickListener {
             val cradleVerticalOffset = (bottomAppBar.cradleVerticalOffset - oneDp).coerceIn(0f, 16 * oneDp)
             bottomAppBar.cradleVerticalOffset = cradleVerticalOffset
-            // BUG: The above does not update the position of the FAB :-( It appears to require a layout,
-            // but even the setter does not change the internal fabVerticalOffset property...
-            // See: https://issuetracker.google.com/issues/127290685
         }
     }
 

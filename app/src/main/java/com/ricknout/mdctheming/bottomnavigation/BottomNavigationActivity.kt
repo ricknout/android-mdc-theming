@@ -3,11 +3,16 @@ package com.ricknout.mdctheming.bottomnavigation
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.forEach
+import androidx.core.view.forEachIndexed
 import com.google.android.material.bottomnavigation.LabelVisibilityMode
 import com.ricknout.mdctheming.R
 import kotlinx.android.synthetic.main.activity_bottom_navigation.*
+import kotlin.math.pow
 
 class BottomNavigationActivity : AppCompatActivity() {
+
+    private var badgingEnabled = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +35,25 @@ class BottomNavigationActivity : AppCompatActivity() {
         horizontalTranslationEnabledButton.setOnClickListener {
             val horizontalTranslationEnabled = !bottomNavigation.isItemHorizontalTranslationEnabled
             bottomNavigation.isItemHorizontalTranslationEnabled = horizontalTranslationEnabled
+        }
+        badgingEnabledButton.setOnClickListener {
+            if (!badgingEnabled) {
+                bottomNavigation.menu.forEachIndexed { index, item ->
+                    val badgeDrawable = bottomNavigation.showBadge(item.itemId)
+                    if (index > 0) {
+                        val number = 10f.pow(index * 2).toInt()
+                        badgeDrawable.number = number
+                    }
+                    // Alternatively init once and use badgeDrawable#setVisible(true, false)
+                }
+                badgingEnabled = true
+            } else {
+                bottomNavigation.menu.forEach { item ->
+                    bottomNavigation.removeBadge(item.itemId)
+                    // Alternatively init once and use badgeDrawable#setVisible(false, false)
+                }
+                badgingEnabled = false
+            }
         }
     }
 
