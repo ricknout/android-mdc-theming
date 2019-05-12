@@ -37,6 +37,7 @@
     </style>
 
     <style name="AppTextAppearance.Chip" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="fontFamily">@font/roboto_mono</item>
         <item name="android:fontFamily">@font/roboto_mono</item>
     </style>
 

@@ -7,6 +7,7 @@ import com.ricknout.mdctheming.bottomappbar.BottomAppBarActivity
 import com.ricknout.mdctheming.bottomnavigation.BottomNavigationActivity
 import com.ricknout.mdctheming.bottomsheet.BottomSheetActivity
 import com.ricknout.mdctheming.button.ButtonActivity
+import com.ricknout.mdctheming.chip.ChipActivity
 import com.ricknout.mdctheming.theming.ThemingActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -29,6 +30,9 @@ class MainActivity : AppCompatActivity() {
         }
         buttonPlaygroundButton.setOnClickListener {
             startActivity(Intent(this, ButtonActivity::class.java))
+        }
+        chipPlaygroundButton.setOnClickListener {
+            startActivity(Intent(this, ChipActivity::class.java))
         }
     }
 }

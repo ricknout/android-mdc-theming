@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Chip" parent="Theme.MaterialComponents.Light" />
+
+    <style name="AppTheme.Chip.Themed" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Global color attributes -->
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryVariant">#000000</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#2962FF</item>
+        <item name="colorSecondaryVariant">#0039CB</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorError">#F44336</item>
+        <item name="colorOnError">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#212121</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorOnBackground">#212121</item>
+        <!-- Global type attributes -->
+        <item name="textAppearanceButton">@style/AppTextAppearance.Button</item>
+        <item name="fontFamily">@font/roboto_mono</item>
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <!-- Global shape attributes -->
+        <item name="shapeAppearanceSmallComponent">@style/AppShapeAppearance.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/AppShapeAppearance.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/AppShapeAppearance.LargeComponent</item>
+        <!-- Chip widget style attributes -->
+        <item name="chipStyle">@style/AppChip2</item>
+        <item name="chipStandaloneStyle">@style/AppChipDrawable</item>
+        <item name="chipGroupStyle">@style/AppChipGroup</item>
+    </style>
+
+    <!-- Using AppChip2 to avoid conflicts with the main playground style -->
+    <style name="AppChip2" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="chipIconTint">@color/chip_text_color</item>
+        <item name="closeIconTint">@color/chip_text_color</item>
+        <item name="android:textAppearance">@style/AppTextAppearance.Chip</item>
+    </style>
+
+    <style name="AppChipDrawable" parent="Widget.MaterialComponents.Chip.Entry">
+        <!-- Add ChipDrawable attrs here -->
+    </style>
+
+    <style name="AppChipGroup" parent="Widget.MaterialComponents.ChipGroup">
+        <!-- Add ChipGroup attrs here -->
+    </style>
+
+</resources>
