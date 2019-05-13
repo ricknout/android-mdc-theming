@@ -17,6 +17,9 @@ https://medium.com/over-engineering/hands-on-with-material-components-for-androi
 ### Part 4: Hands-on with Material Components for Android: Buttons
 https://medium.com/over-engineering/hands-on-with-material-components-for-android-buttons-76fa1a92ec0a
 
+### Part 5: Hands-on with Material Components for Android: Chips
+https://medium.com/over-engineering/hands-on-with-material-components-for-android-chips-21dc67c8b956
+
 ### More coming soon...
 
 ![Playground](art/playground.png?raw=true "Playground")
