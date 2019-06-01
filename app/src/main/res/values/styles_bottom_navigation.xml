@@ -23,6 +23,8 @@
         <item name="android:fontFamily">@font/roboto_mono</item>
         <!-- Bottom Navigation widget style attribute -->
         <item name="bottomNavigationStyle">@style/AppBottomNavigation2</item>
+        <!-- Badge style attribute -->
+        <item name="badgeStyle">@style/AppBadge</item>
     </style>
 
     <!-- Using AppBottomNavigation2 to avoid conflicts with the main playground style -->
@@ -33,6 +35,11 @@
         <item name="itemRippleColor">@color/bottom_navigation_item_ripple_color</item>
         <item name="itemTextAppearanceActive">?attr/textAppearanceCaption</item>
         <item name="itemTextAppearanceInactive">?attr/textAppearanceCaption</item>
+    </style>
+
+    <style name="AppBadge" parent="Widget.MaterialComponents.Badge">
+        <item name="backgroundColor">?attr/colorError</item>
+        <item name="badgeTextColor">?attr/colorOnError</item>
     </style>
 
 </resources>
