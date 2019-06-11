@@ -14,8 +14,9 @@ class BottomSheetActivity : AppCompatActivity() {
 
     private lateinit var standardBottomSheetBehavior: BottomSheetBehavior<View>
 
-    private val startColor = Color.parseColor("#2962FF")
-    private val endColor = Color.parseColor("#FFFFFF")
+    private val startColor = Color.parseColor("#00FFFFFF")
+    private val endColor = Color.parseColor("#FFFFFFFF")
+    private val textColor = Color.parseColor("#FF000000")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,6 +59,7 @@ class BottomSheetActivity : AppCompatActivity() {
         }
         standardBottomSheetBehavior.setBottomSheetCallback(bottomSheetCallback)
         standardBottomSheetBehavior.saveFlags = BottomSheetBehavior.SAVE_ALL
+        textView.setTextColor(textColor)
     }
 
     private fun showModalBottomSheet() {
