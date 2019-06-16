@@ -8,5 +8,6 @@
     <string name="title_bottom_sheet">Bottom Sheets</string>
     <string name="title_button">Buttons</string>
     <string name="title_chip">Chips</string>
+    <string name="title_card">Cards</string>
 
 </resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.material.catalog.draggable.DraggableCoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/parentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp"
+        android:clipToPadding="false">
+
+    <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:checkable="true">
+
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Card"
+                android:textColor="?attr/colorOnSecondary"
+                android:gravity="center" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</io.material.catalog.draggable.DraggableCoordinatorLayout>

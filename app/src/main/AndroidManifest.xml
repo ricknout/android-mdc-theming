@@ -47,6 +47,11 @@
                 android:label="@string/title_chip"
                 android:theme="@style/AppTheme.Chip.Themed" />
 
+        <activity
+                android:name=".card.CardActivity"
+                android:label="@string/title_card"
+                android:theme="@style/AppTheme.Card.Themed" />
+
         <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
 
     </application>
