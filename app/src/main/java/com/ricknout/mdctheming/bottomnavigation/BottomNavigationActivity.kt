@@ -39,7 +39,7 @@ class BottomNavigationActivity : AppCompatActivity() {
         badgingEnabledButton.setOnClickListener {
             if (!badgingEnabled) {
                 bottomNavigation.menu.forEachIndexed { index, item ->
-                    val badgeDrawable = bottomNavigation.showBadge(item.itemId)
+                    val badgeDrawable = bottomNavigation.getOrCreateBadge(item.itemId)
                     if (index > 0) {
                         val number = 10f.pow(index * 2).toInt()
                         badgeDrawable.number = number
