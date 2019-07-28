@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Dialog" parent="Theme.MaterialComponents.DayNight" />
+
+    <style name="AppTheme.Dialog.Themed" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Global color attributes -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_variant</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+        <item name="colorError">@color/color_error</item>
+        <item name="colorOnError">@color/color_on_error</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorOnBackground">@color/color_on_background</item>
+        <item name="android:statusBarColor">@color/color_status_bar</item>
+        <!-- Global type attributes -->
+        <item name="textAppearanceButton">@style/AppTextAppearance.Button</item>
+        <item name="fontFamily">@font/roboto_mono</item>
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <!-- Global shape attributes -->
+        <item name="shapeAppearanceSmallComponent">@style/AppShapeAppearance.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/AppShapeAppearance.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/AppShapeAppearance.LargeComponent</item>
+        <!-- Dialog theme overlay attribute -->
+        <item name="materialAlertDialogTheme">@style/AppThemeOverlay.Dialog</item>
+    </style>
+
+    <style name="AppThemeOverlay.Dialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="alertDialogStyle">@style/AppMaterialAlertDialog</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/AppTextAppearance.MaterialAlertDialog.Body</item>
+    </style>
+
+    <style name="AppMaterialAlertDialog" parent="MaterialAlertDialog.MaterialComponents">
+        <item name="shapeAppearance">?attr/shapeAppearanceMediumComponent</item>
+    </style>
+
+    <style name="AppTextAppearance.MaterialAlertDialog.Body" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <!-- Add MaterialAlertDialog body text attrs here -->
+    </style>
+
+</resources>

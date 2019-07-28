@@ -52,6 +52,11 @@
                 android:label="@string/title_card"
                 android:theme="@style/AppTheme.Card.Themed" />
 
+        <activity
+                android:name=".dialog.DialogActivity"
+                android:label="@string/title_dialog"
+                android:theme="@style/AppTheme.Dialog.Themed" />
+
         <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
 
     </application>
