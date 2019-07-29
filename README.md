@@ -23,6 +23,9 @@ https://medium.com/over-engineering/hands-on-with-material-components-for-androi
 ### Part 6: Hands-on with Material Components for Android: Cards
 https://medium.com/over-engineering/hands-on-with-material-components-for-android-cards-311b00a5ea3
 
+### Part 6: Hands-on with Material Components for Android: Dialogs
+https://medium.com/over-engineering/hands-on-with-material-components-for-android-dialogs-75c6d726f83a
+
 ### More coming soon...
 
 ![Playground](art/playground.png?raw=true "Playground")
