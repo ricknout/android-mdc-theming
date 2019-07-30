@@ -37,6 +37,12 @@
                     android:layout_height="wrap_content"
                     android:text="Toggle badging" />
 
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/badgeGravityButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toggle badge gravity" />
+
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>

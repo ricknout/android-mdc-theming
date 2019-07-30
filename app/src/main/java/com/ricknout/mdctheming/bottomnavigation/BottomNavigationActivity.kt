@@ -5,6 +5,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.forEach
 import androidx.core.view.forEachIndexed
+import com.google.android.material.badge.BadgeDrawable
 import com.google.android.material.bottomnavigation.LabelVisibilityMode
 import com.ricknout.mdctheming.R
 import kotlinx.android.synthetic.main.activity_bottom_navigation.*
@@ -53,6 +54,18 @@ class BottomNavigationActivity : AppCompatActivity() {
                     // Alternatively init once and use badgeDrawable#setVisible(false, false)
                 }
                 badgingEnabled = false
+            }
+        }
+        badgeGravityButton.setOnClickListener {
+            val badgeGravity = when (bottomNavigation.getBadge(R.id.item1)?.badgeGravity) {
+                BadgeDrawable.TOP_END -> BadgeDrawable.TOP_START
+                BadgeDrawable.TOP_START -> BadgeDrawable.BOTTOM_START
+                BadgeDrawable.BOTTOM_START -> BadgeDrawable.BOTTOM_END
+                else -> BadgeDrawable.TOP_END
+            }
+            bottomNavigation.menu.forEachIndexed { _, item ->
+                val badgeDrawable = bottomNavigation.getBadge(item.itemId)
+                badgeDrawable?.badgeGravity = badgeGravity
             }
         }
     }
