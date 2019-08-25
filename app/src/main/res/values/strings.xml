@@ -10,5 +10,6 @@
     <string name="title_chip">Chips</string>
     <string name="title_card">Cards</string>
     <string name="title_dialog">Dialogs</string>
+    <string name="title_selection_control">Selection Controls</string>
 
 </resources>

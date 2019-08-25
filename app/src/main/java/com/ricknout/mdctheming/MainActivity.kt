@@ -10,6 +10,7 @@ import com.ricknout.mdctheming.button.ButtonActivity
 import com.ricknout.mdctheming.card.CardActivity
 import com.ricknout.mdctheming.chip.ChipActivity
 import com.ricknout.mdctheming.dialog.DialogActivity
+import com.ricknout.mdctheming.selectioncontrol.SelectionControlActivity
 import com.ricknout.mdctheming.theming.ThemingActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -41,6 +42,9 @@ class MainActivity : AppCompatActivity() {
         }
         dialogPlaygroundButton.setOnClickListener {
             startActivity(Intent(this, DialogActivity::class.java))
+        }
+        selectionControlPlaygroundButton.setOnClickListener {
+            startActivity(Intent(this, SelectionControlActivity::class.java))
         }
     }
 }

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.SelectionControl" parent="Theme.MaterialComponents.DayNight" />
+
+    <style name="AppTheme.SelectionControl.Themed" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Global color attributes -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_variant</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+        <item name="colorError">@color/color_error</item>
+        <item name="colorOnError">@color/color_on_error</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorOnBackground">@color/color_on_background</item>
+        <item name="android:statusBarColor">@color/color_status_bar</item>
+        <!-- Global type attributes -->
+        <item name="fontFamily">@font/roboto_mono</item>
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <!-- Global shape attributes -->
+        <item name="shapeAppearanceSmallComponent">@style/AppShapeAppearance.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/AppShapeAppearance.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/AppShapeAppearance.LargeComponent</item>
+        <!-- Selection control widget style attributes -->
+        <item name="radioButtonStyle">@style/AppRadioButton</item>
+        <item name="checkboxStyle">@style/AppCheckbox</item>
+        <item name="switchStyle">@style/AppSwitch</item>
+    </style>
+
+    <style name="AppRadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="useMaterialThemeColors">true</item>
+    </style>
+
+    <style name="AppCheckbox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="useMaterialThemeColors">true</item>
+    </style>
+
+    <style name="AppSwitch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="useMaterialThemeColors">true</item>
+    </style>
+
+</resources>

@@ -57,6 +57,11 @@
                 android:label="@string/title_dialog"
                 android:theme="@style/AppTheme.Dialog.Themed" />
 
+        <activity
+                android:name=".selectioncontrol.SelectionControlActivity"
+                android:label="@string/title_selection_control"
+                android:theme="@style/AppTheme.SelectionControl.Themed" />
+
         <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
 
     </application>
