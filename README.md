@@ -26,6 +26,9 @@ https://medium.com/over-engineering/hands-on-with-material-components-for-androi
 ### Part 7: Hands-on with Material Components for Android: Dialogs
 https://medium.com/over-engineering/hands-on-with-material-components-for-android-dialogs-75c6d726f83a
 
+### Part 8: Hands-on with Material Components for Android: Selection Controls
+https://medium.com/over-engineering/hands-on-with-material-components-for-android-selection-controls-a2cf17ea4473
+
 ### More coming soon...
 
 ![Playground](art/playground.png?raw=true "Playground")
