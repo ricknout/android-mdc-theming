@@ -97,7 +97,7 @@ class BottomAppBarActivity : AppCompatActivity() {
             bottomAppBar.cradleVerticalOffset
         )
         val background = bottomAppBar.background as MaterialShapeDrawable
-        background.shapeAppearanceModel.topEdge = topEdge
+        background.shapeAppearanceModel = background.shapeAppearanceModel.toBuilder().setTopEdge(topEdge).build()
         background.invalidateSelf()
     }
 }

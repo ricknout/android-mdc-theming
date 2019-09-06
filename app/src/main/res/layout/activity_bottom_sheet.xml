@@ -32,6 +32,12 @@
                     android:layout_height="wrap_content"
                     android:text="Show Modal Bottom Sheet" />
 
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/toggleModalDismissAnimationButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toggle modal dismiss animation" />
+
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>

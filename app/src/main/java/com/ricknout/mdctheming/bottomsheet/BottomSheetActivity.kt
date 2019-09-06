@@ -18,6 +18,8 @@ class BottomSheetActivity : AppCompatActivity() {
     private val endColor = Color.parseColor("#FFFFFFFF")
     private val textColor = Color.parseColor("#FF000000")
 
+    private var modalDismissWithAnimation = false
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bottom_sheet)
@@ -32,6 +34,9 @@ class BottomSheetActivity : AppCompatActivity() {
         }
         modalBottomSheetButton.setOnClickListener {
             showModalBottomSheet()
+        }
+        toggleModalDismissAnimationButton.setOnClickListener {
+            modalDismissWithAnimation = !modalDismissWithAnimation
         }
     }
 
@@ -63,10 +68,8 @@ class BottomSheetActivity : AppCompatActivity() {
     }
 
     private fun showModalBottomSheet() {
-        val modalBottomSheet = ModalBottomSheet()
+        val modalBottomSheet = ModalBottomSheet.newInstance(modalDismissWithAnimation)
         modalBottomSheet.show(supportFragmentManager, ModalBottomSheet.TAG)
-        //val modalBottomSheetBehavior = (modalBottomSheet.dialog as BottomSheetDialog).behavior
-        // Use this to programmatically apply behavior attributes
     }
 
     private fun animateStandardBottomSheetStates() {
