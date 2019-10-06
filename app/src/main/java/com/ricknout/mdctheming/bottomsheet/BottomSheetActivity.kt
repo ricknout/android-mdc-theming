@@ -62,7 +62,7 @@ class BottomSheetActivity : AppCompatActivity() {
                 slideView.setBackgroundColor(color)
             }
         }
-        standardBottomSheetBehavior.setBottomSheetCallback(bottomSheetCallback)
+        standardBottomSheetBehavior.addBottomSheetCallback(bottomSheetCallback)
         standardBottomSheetBehavior.saveFlags = BottomSheetBehavior.SAVE_ALL
         textView.setTextColor(textColor)
     }
