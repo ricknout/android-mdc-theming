@@ -17,16 +17,27 @@ class ButtonActivity : AppCompatActivity() {
 
     private fun setupButtons() {
         toggleSingleSelectionButton.setOnClickListener {
-            toggleGroup.isSingleSelection = !toggleGroup.isSingleSelection
+            toggleGroupHorizontal.isSingleSelection = !toggleGroupHorizontal.isSingleSelection
+            toggleGroupVertical.isSingleSelection = !toggleGroupVertical.isSingleSelection
         }
     }
 
     private fun setupToggleGroup() {
-        toggleGroup.addOnButtonCheckedListener { group, checkedId, isChecked ->
+        toggleGroupHorizontal.addOnButtonCheckedListener { group, checkedId, isChecked ->
             val buttonName = when (checkedId) {
-                R.id.toggleButton1 -> "Button 1"
-                R.id.toggleButton2 -> "Button 2"
-                R.id.toggleButton3 -> "Button 3"
+                R.id.toggleButton1Horizontal -> "Button 1 (Horizontal)"
+                R.id.toggleButton2Horizontal -> "Button 2 (Horizontal)"
+                R.id.toggleButton3Horizontal -> "Button 3 (Horizontal)"
+                else -> ""
+            }
+            val text = if (isChecked) "Checked $buttonName" else "Unchecked $buttonName"
+            Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
+        }
+        toggleGroupVertical.addOnButtonCheckedListener { group, checkedId, isChecked ->
+            val buttonName = when (checkedId) {
+                R.id.toggleButton1Vertical -> "Button 1 (Vertical)"
+                R.id.toggleButton2Vertical -> "Button 2 (Vertical)"
+                R.id.toggleButton3Vertical -> "Button 3 (Vertical)"
                 else -> ""
             }
             val text = if (isChecked) "Checked $buttonName" else "Unchecked $buttonName"

@@ -44,6 +44,7 @@ class ChipActivity : AppCompatActivity() {
     private fun setupChipGroup() {
         chipGroup.check(R.id.choice1)
         val checkedChipId = chipGroup.checkedChipId // Returns View.NO_ID if singleSelection = false
+        val checkedChipIds = chipGroup.checkedChipIds
         chipGroup.setOnCheckedChangeListener { _, checkedId ->
             val chipName = when (checkedId) {
                 R.id.choice1 -> "Chip 1"

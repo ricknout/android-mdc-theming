@@ -80,29 +80,69 @@
                 android:text="Toggle single selection" />
 
         <com.google.android.material.button.MaterialButtonToggleGroup
-                android:id="@+id/toggleGroup"
+                android:id="@+id/toggleGroupHorizontal"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
-                    android:id="@+id/toggleButton1"
+                    android:id="@+id/toggleButton1Horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="?attr/materialButtonOutlinedStyle"
                     android:text="None" />
 
             <com.google.android.material.button.MaterialButton
-                    android:id="@+id/toggleButton2"
+                    android:id="@+id/toggleButton2Horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="?attr/materialButtonOutlinedStyle"
                     android:text="Custom" />
 
             <com.google.android.material.button.MaterialButton
-                    android:id="@+id/toggleButton3"
+                    android:id="@+id/toggleButton3Horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="?attr/materialButtonOutlinedStyle"
+                    android:text="All" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggleGroupVertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/toggleButton1Vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:minHeight="36dp"
+                    android:text="None" />
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/toggleButton2Vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:minHeight="36dp"
+                    android:text="Custom" />
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/toggleButton3Vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:minHeight="36dp"
                     android:text="All" />
 
         </com.google.android.material.button.MaterialButtonToggleGroup>
