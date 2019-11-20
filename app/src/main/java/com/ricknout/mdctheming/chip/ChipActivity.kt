@@ -15,7 +15,7 @@ class ChipActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chip)
         setupClickListeners()
-        setupButton()
+        setupButtons()
         setupChipGroup()
         setupChipDrawable()
     }
@@ -35,9 +35,12 @@ class ChipActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupButton() {
+    private fun setupButtons() {
         toggleSingleSelectionButton.setOnClickListener {
             chipGroup.isSingleSelection = !chipGroup.isSingleSelection
+        }
+        toggleSelectionRequiredButton.setOnClickListener {
+            chipGroup.isSelectionRequired = !chipGroup.isSelectionRequired
         }
     }
 

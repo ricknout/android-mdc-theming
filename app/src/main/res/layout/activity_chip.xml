@@ -61,8 +61,14 @@
                 android:id="@+id/toggleSingleSelectionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Toggle single selection"
-                android:layout_marginBottom="32dp" />
+                android:text="Toggle single selection" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/toggleSelectionRequiredButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toggle selection required"
+            android:layout_marginBottom="32dp" />
 
         <com.google.android.material.chip.ChipGroup
                 android:id="@+id/chipGroup"
