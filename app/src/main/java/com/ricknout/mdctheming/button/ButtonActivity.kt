@@ -20,6 +20,10 @@ class ButtonActivity : AppCompatActivity() {
             toggleGroupHorizontal.isSingleSelection = !toggleGroupHorizontal.isSingleSelection
             toggleGroupVertical.isSingleSelection = !toggleGroupVertical.isSingleSelection
         }
+        toggleSelectionRequiredButton.setOnClickListener {
+            toggleGroupHorizontal.isSelectionRequired = !toggleGroupHorizontal.isSelectionRequired
+            toggleGroupVertical.isSelectionRequired = !toggleGroupVertical.isSelectionRequired
+        }
     }
 
     private fun setupToggleGroup() {

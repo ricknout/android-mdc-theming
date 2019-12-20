@@ -79,6 +79,12 @@
                 android:layout_marginTop="32dp"
                 android:text="Toggle single selection" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/toggleSelectionRequiredButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toggle selection required" />
+
         <com.google.android.material.button.MaterialButtonToggleGroup
                 android:id="@+id/toggleGroupHorizontal"
                 android:layout_width="wrap_content"
