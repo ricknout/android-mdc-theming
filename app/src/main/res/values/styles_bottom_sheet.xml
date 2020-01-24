@@ -35,6 +35,7 @@
         <item name="backgroundTint">?attr/colorSecondary</item>
         <item name="android:elevation">8dp</item>
         <item name="behavior_hideable">true</item>
+        <item name="behavior_draggable">true</item>
         <item name="behavior_skipCollapsed">false</item>
         <item name="behavior_peekHeight">200dp</item>
         <item name="behavior_fitToContents">false</item>

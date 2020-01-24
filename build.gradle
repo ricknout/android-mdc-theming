@@ -4,7 +4,7 @@ buildscript {
     ext.androidx_core_version = "1.2.0-rc01"
     ext.androidx_appcompat_version = "1.2.0-alpha01"
     ext.androidx_constraintlayout_version = '2.0.0-beta4'
-    ext.material_version = '1.2.0-alpha03'
+    ext.material_version = '1.2.0-alpha04'
     repositories {
         google()
         jcenter()
